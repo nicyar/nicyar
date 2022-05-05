@@ -1,0 +1,18 @@
+
+[{
+"title":"escuadra",
+"price":123.45,
+"thumbnail":"https://cdn3.iconfinder.com/data/icons/education-outline-1/64/11-2-512.png"
+},
+{
+"title":"calculadora",
+"price":234.45,
+"thumbnail":"https://cdn3.iconfinder.com/data/icons/education-outline-1/64/19-2-512.png"
+},
+{
+"title":"Globo Terrraqueo",
+"price":345.67,
+"thumbnail":"https://cdn3.iconfinder.com/data/icons/education-outline-1/64/14-2-512.png"
+
+}
+]
