@@ -25,6 +25,9 @@ router.get('/:id',(req,res)=>{
         res.send(products)
     }
 
+    // const one = ()=>{if(product_id in products.id){
+    //     res.send(one)
+    // }}
 });
 router.get('/',(req,res)=>{
     res.send({status:"success",payload:products})
