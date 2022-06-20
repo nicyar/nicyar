@@ -59,9 +59,9 @@ router.get('/carrito/', (req, res) => {
     return myCart.getCart(req, res)
  })
 
-router.post('/carrito/:id/productos', (req, res) => {
-    return myCart.postProduct(req, res)
- })
+router.post('/carrito/:id/productos/:id_prod',(req,res)=>{
+    return myCart.postExistingProduct(req,res)
+})
 
 router.delete("/carrito/:id", (req, res) => {
     return myCart.deleteCart(req, res)

@@ -72,6 +72,39 @@ class Cart {
         }
     }
 
+    async postExistingProduct(req,res){
+        let archivo=this.archivo;
+        const dataProduct=JSON.parse(fs.readFileSync("./productos.json","utf-8"));
+        const cartId=req.params.id;
+        const productId=req.params.id_prod;
+        const product =dataProduct.find(elem=>elem.id===Number(productId))
+        if (product){
+            const objetos=await this.getAll();
+            const cart=obejtos.find(elem=>elem.id ===Number(cartId))
+            if (cart){
+                cart.productos.push(product);
+                async function addCart(){
+                    try{
+                        await fs.promises.writeFile(archivo,JSON.stringify(objetos,null,2))
+                        res.json({Mensaje:`el proucto ${product.name} fue agregado al carrito ${cartId}`})
+                    }
+                    catch(e){
+                        console.log(e)
+                    }
+                }
+                addCart();
+            }
+            else{
+                res.status(404).json({error:"carrito no encontrado"})
+            }
+        }
+        else{
+            res.status(404).json({error:"producto no encontrado"})
+        }
+    
+    }
+
+
     async postProduct(req, res) {
         const productoNuevo = req.body;
         const cartId = Number(req.params.id);
@@ -105,6 +138,8 @@ class Cart {
             return res.status(400).send({ error: "Parametros incorrectos" });
         }
     }
+
+
 
     async deleteCart(req, res) {
         const archivo = this.archivo;
