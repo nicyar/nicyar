@@ -3,7 +3,7 @@
 import mongoose from "mongoose";
 
 //MONGODB CONFIG
-export const db = mongoose.connect("mongodb+srv://datanicyar1:<password>@cluster0.prhdi.mongodb.net/test", 
+export const db = mongoose.connect("mongodb+srv://datanicyar1:<password>@cluster0.prhdi.mongodb.net/?retryWrites=true&w=majority", 
 { useNewUrlParser: true })
 
 
