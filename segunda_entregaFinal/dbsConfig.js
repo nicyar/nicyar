@@ -5,7 +5,7 @@ export const FieldValue = admin.firestore.FieldValue;
 
 const serviceAccount = JSON.parse(
     await readFile(
-        new URL("./firebaseSA.json", import.meta.url)
+        new URL("./firebaseNi.json", import.meta.url)
     )
 ) 
 
