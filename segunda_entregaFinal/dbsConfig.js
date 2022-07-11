@@ -19,7 +19,7 @@ export const dbFb = admin.firestore();
 export const queryProds = dbFb.collection("products");
 export const queryCart = dbFb.collection("cart");
 //MONGODB CONFIG
-export const db = mongoose.connect("mongodb+srv://datanicyar1:<password>@cluster0.prhdi.mongodb.net/?retryWrites=true&w=majority", 
+export const db = mongoose.connect("mongodb+srv://datanicyar1:Nicolas2001@cluster0.prhdi.mongodb.net/?retryWrites=true&w=majority", 
 { useNewUrlParser: true })
 
 

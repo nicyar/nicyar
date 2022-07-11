@@ -1,0 +1,57 @@
+{
+    "id": "mensajes",
+    "mensajes": [
+      {
+        "_id": "62cc1126cb475a21a4fd5a6e",
+        "author": {
+          "email": "caballerosasha@hotmail.com",
+          "nombre": "Sasha",
+          "apellido": "Rodriguez",
+          "edad": "27",
+          "alias": "SashaRC",
+          "avatar": "no"
+        },
+        "text": "Hola",
+        "time": "11/7/2022, 09:01:42"
+      },
+      {
+        "_id": "62cc112ecb475a21a4fd5a70",
+        "author": {
+          "email": "caballerosasha@hotmail.com",
+          "nombre": "Sasha",
+          "apellido": "Rodriguez",
+          "edad": "27",
+          "alias": "SashaRC",
+          "avatar": "no"
+        },
+        "text": "probando",
+        "time": "11/7/2022, 09:01:50"
+      },
+      {
+        "_id": "62cc117eeec032884c1d24ff",
+        "author": {
+          "email": "tamara@hotmail.com",
+          "nombre": "Tamara",
+          "apellido": "Acosta",
+          "edad": "26",
+          "alias": "Tamunu",
+          "avatar": "no"
+        },
+        "text": "holitas",
+        "time": "11/7/2022, 09:03:10"
+      },
+      {
+        "_id": "62cc1185eec032884c1d2501",
+        "author": {
+          "email": "tamara@hotmail.com",
+          "nombre": "Tamara",
+          "apellido": "Acosta",
+          "edad": "26",
+          "alias": "Tamunu",
+          "avatar": "no"
+        },
+        "text": "bb",
+        "time": "11/7/2022, 09:03:17"
+      }
+    ]
+  }

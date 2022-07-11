@@ -38,7 +38,7 @@ router.get('/productos/:id', (req, res) => {
 
 router.post('/productos', (req, res) => {
     return myApi.postProduct(req, res)
- })
+ })//llama a este metodo por eso lo valida desde el formulario de views pages index que llama del formulario al post api/productos
 
 router.put("/productos/:id", (req, res) => {
     return myApi.putProduct(req, res)
